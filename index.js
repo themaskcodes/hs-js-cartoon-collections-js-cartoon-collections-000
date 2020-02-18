@@ -35,13 +35,26 @@ for(var i = 0; i < words.length; i++) {
 return result
 }
 
+snacks = ["crackers", "gouda", "thyme"]
+soup = ["tomato soup", "cheddar", "oyster", "crackers", "gouda"]
+ingredients = ["garlic", "rosemary", "bread"]
 
-
-function findTheCheese(maybeCheese) {
+function findTheCheese(ingre) {
   var cheeses = ["cheddar", "gouda", "camembert"]
-  //iterate over maybeCheese check if any of the items inside of maybeCheese exists in cheeses, and if they do, return that cheese. and if not return noCheese.
-  
+  for (var c = 0; c < ingre.length; c++){ 
+    for ( var i = 0; i < cheeses.length; i++){ 
+if (cheeses[i] === ingre[c]) {
+  return ingre[c]
+
+    
+      }
+   }
 }
+
+   return "no cheese!"
+
+}
+
 
     
 
