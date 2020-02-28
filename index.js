@@ -45,13 +45,24 @@ function findTheCheese(ingre) {
     for ( var i = 0; i < cheeses.length; i++){ 
 if (cheeses[i] === ingre[c]) {
   return ingre[c]
-
-    
       }
    }
 }
-
    return "no cheese!"
+
+}
+
+
+function wordsWithB(words) {
+ for(var c = 0; c < words.lenth; c++) {
+   if(words[c][0] === "b") { 
+     return words[c][0]
+   }
+ }
+ 
+ 
+
+
 
 }
 
